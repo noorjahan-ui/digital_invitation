@@ -332,14 +332,22 @@
 
       .hero {
         min-height: 100vh;
+        height: 100vh;
         background-color: #efe9e4;
         background-image:
           linear-gradient(180deg, rgba(10, 8, 10, 0.28) 0%, rgba(10, 8, 10, 0.12) 40%, rgba(255, 255, 255, 0.72) 100%),
           url("WhatsApp Image 2026-03-26 at 11.56.29 PM.jpeg");
         background-position: center, center;
         background-repeat: no-repeat, no-repeat;
-        background-size: contain, contain;
+        background-size: cover, cover;
         padding: 90px 18px 70px;
+      }
+
+      @media (max-width: 600px) {
+        .hero {
+          background-position: center top, center top;
+          padding: 70px 16px 60px;
+        }
       }
 
       .hero-card {
@@ -993,6 +1001,14 @@
       .couple-card img.full-face {
         object-fit: cover;
         background: transparent;
+        object-position: 50% 10%;
+      }
+
+      @media (max-width: 600px) {
+        .couple-card img.full-face {
+          height: 220px;
+          object-position: 50% 6%;
+        }
       }
 
       .couple-card h5 {
@@ -1007,6 +1023,7 @@
         margin-top: 12px;
         overflow-x: auto;
         scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
         scrollbar-width: none;
       }
 
@@ -1016,6 +1033,7 @@
         object-fit: cover;
         object-position: 50% 20%;
         border-radius: 12px;
+        scroll-snap-align: center;
         flex: 0 0 80%;
       }
 
@@ -1181,7 +1199,6 @@
 
       <section class="countdown-section locked">
         <div class="calendar-actions fade-up">
-          <div class="flower-line">&#10047; &#10047; &#10047;</div>
           <h3 class="section-title" data-i18n="calendar_highlight">Calendar Highlight</h3>
           <div class="mini-calendar" aria-label="Wedding date highlight">
             <div class="mc-top">Calendar Highlight June 2026</div>
@@ -1238,9 +1255,9 @@
             >Save to Calendar</a >
           
         </div>
+          <div class="flower-line">&#10047; &#10047; &#10047;</div>
 
         <div class="countdown-top section-card">
-          <div class="flower-line">&#10047; &#10047; &#10047;</div>
           <h3 data-i18n="celebration_begins">The Celebration Begins In</h3>
           <div class="count-grid" id="countdown">
             <div class="count-block">
@@ -1663,14 +1680,15 @@
 
       const highlightsGrid = document.getElementById("highlightsGrid");
       if (highlightsGrid) {
-        let dir = 1;
-        setInterval(() => {
-          const maxScroll = highlightsGrid.scrollWidth - highlightsGrid.clientWidth;
-          if (maxScroll <= 0) return;
-          highlightsGrid.scrollLeft += 1.2 * dir;
-          if (highlightsGrid.scrollLeft >= maxScroll - 2) dir = -1;
-          if (highlightsGrid.scrollLeft <= 0) dir = 1;
-        }, 20);
+        const items = Array.from(highlightsGrid.querySelectorAll("img"));
+        let idx = 0;
+        if (items.length > 1) {
+          setInterval(() => {
+            idx = (idx + 1) % items.length;
+            const left = items[idx].offsetLeft - (highlightsGrid.clientWidth - items[idx].clientWidth) / 2;
+            highlightsGrid.scrollTo({ left, behavior: "smooth" });
+          }, 2800);
+        }
       }
     </script>
   </body>
