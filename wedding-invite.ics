@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NooraFavas//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:noora-favas-wedding-20260606@invitation
+DTSTAMP:20260330T000000Z
+DTSTART;TZID=Asia/Kolkata:20260606T103000
+DTEND;TZID=Asia/Kolkata:20260606T130000
+SUMMARY:Noora & Favas Wedding
+DESCRIPTION:Join us for the wedding celebration.
+LOCATION:Cholakkal Auditorium, Thiruveappura
+END:VEVENT
+END:VCALENDAR
