@@ -571,12 +571,16 @@
         background: rgba(192, 23, 65, 0.75);
       }
 
-      .countdown-top {
-        background: #ffffff;
-        padding: 46px 20px 28px;
-        text-align: center;
-        position: relative;
-      }
+   .countdown-top {
+  background: transparent;
+  padding: 46px 20px 28px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers horizontally */
+  justify-content: center; /* centers vertically (if needed) */
+}
 
 
       .countdown-top h3 {
@@ -1264,7 +1268,7 @@
         </div>
           <div class="flower-line">&#10047; &#10047; &#10047;</div>
 
-        <div class="countdown-top section-card">
+        <div class="countdown-top">
           <h3 data-i18n="celebration_begins">The Celebration Begins In</h3>
           <div class="count-grid" id="countdown">
             <div class="count-block">
@@ -1297,7 +1301,7 @@
               >Cholakkal Auditorium, Thiruveappura</a
             >
           </p>
-          <img class="venue-photo" src="cholakkal.png" alt="Cholakkal Auditorium" />
+          <img class="venue-photo" src="cholakkal.jpeg" alt="Cholakkal Auditorium" />
           <a
             class="qr-wrap"
             href="https://www.google.com/maps/search/?api=1&query=Cholakkal%20Auditorium%20Thiruveappura"
@@ -1352,8 +1356,8 @@
               </div>
               <div class="dot" aria-hidden="true"></div>
               <div class="details">
-                <div class="title">At Groom's Residence</div>
-                <div class="time">Afternoon</div>
+                <div class="title">Vista Convention Center</div>
+                
                 <div class="full-date">Sun, 07 June 2026</div>
               </div>
             </div>
