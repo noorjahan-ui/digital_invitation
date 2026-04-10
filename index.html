@@ -12,13 +12,13 @@
     />
     <style>
       :root {
-        --rose: #800000;
-        --rose-dark: #5b0000;
-        --rose-light: #f7e6e6;
-        --ivory: #ffffff;
-        --ink: #d4af37;
-        --gold: #b68b8b;
-        --shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+        --rose: #b81037;
+        --rose-dark: #8f0828;
+        --rose-light: #f4c6cf;
+        --ivory: #fbf7f1;
+        --ink: #3b2b2b;
+        --gold: #c9a26d;
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
       }
 
       * {
@@ -29,7 +29,7 @@
 
       body {
         font-family: "Cormorant Garamond", serif;
-        background: var(--rose);
+        background: #ffffff;
         color: var(--ink);
       }
 
@@ -211,7 +211,7 @@
 
       .card {
         width: min(360px, 92vw);
-        background: rgba(128, 0, 0, 0.38);
+        background: var(--ivory);
         border-radius: 26px;
         padding: 38px 26px 50px;
         box-shadow: var(--shadow);
@@ -219,7 +219,6 @@
         text-align: center;
         isolation: isolate;
         overflow: hidden;
-        color: var(--ink);
       }
 
       .paper-texture::before {
@@ -254,7 +253,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         cursor: pointer;
-        color: var(--ink);
+        color: #7d5a3c;
       }
 
       .button-row {
@@ -266,7 +265,7 @@
       .button {
         border: 1px solid rgba(0, 0, 0, 0.12);
         background: #ffffff;
-        color: var(--ink);
+        color: #3b2b2b;
         border-radius: 999px;
         padding: 10px 16px;
         font-size: 12px;
@@ -277,7 +276,7 @@
 
       .button.secondary {
         border-color: rgba(192, 23, 65, 0.35);
-        color: var(--ink);
+        color: #c01741;
       }
 
       .lang-toggle {
@@ -290,7 +289,7 @@
       .lang-toggle button {
         border: 1px solid rgba(0, 0, 0, 0.12);
         background: #ffffff;
-        color: var(--ink);
+        color: #3b2b2b;
         border-radius: 999px;
         padding: 4px 10px;
         font-size: 11px;
@@ -298,8 +297,8 @@
       }
 
       .lang-toggle button.active {
-        border-color: var(--ink);
-        color: var(--ink);
+        border-color: #c01741;
+        color: #c01741;
         font-weight: 600;
       }
 
@@ -312,7 +311,7 @@
       .theme-toggle button {
         border: 1px solid rgba(0, 0, 0, 0.12);
         background: #ffffff;
-        color: var(--ink);
+        color: #3b2b2b;
         border-radius: 999px;
         padding: 6px 12px;
         font-size: 12px;
@@ -322,19 +321,19 @@
       .gate-title {
         font-family: "Great Vibes", cursive;
         font-size: 36px;
-        color: var(--ink);
+        color: #7b5560;
       }
 
       .gate-subtitle {
         font-size: 18px;
         margin-top: 6px;
-        color: var(--ink);
+        color: #806770;
       }
 
       .hero {
         min-height: 100vh;
         height: 100vh;
-        background-color: var(--ink);
+        background-color: #efe9e4;
         background-image:
           linear-gradient(180deg, rgba(10, 8, 10, 0.28) 0%, rgba(10, 8, 10, 0.12) 40%, rgba(255, 255, 255, 0.72) 100%),
           url("WhatsApp Image 2026-03-30 at 7.05.01 PM.jpeg");
@@ -359,7 +358,7 @@
         width: min(380px, 92vw);
         margin: 0 auto;
         text-align: center;
-        color: var(--ink);
+        color: #ffffff;
         position: relative;
         transform: translateY(14vh);
       }
@@ -406,12 +405,12 @@
         font-family: "Playfair Display", serif;
         font-size: 20px;
         line-height: 1.6;
-        color: var(--ink);
+        color: #7b5560;
       }
 
       .dua-en {
         font-size: 14px;
-        color: var(--ink);
+        color: #5a3d45;
         margin-top: 6px;
       }.wedding-date {
         margin-bottom: 18px;
@@ -438,48 +437,47 @@
         font-size: 12px;
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        color: var(--ink);
+        color: #ffffff;
         text-decoration: none;
-        background: var(--rose);
-        border: 1px solid var(--rose-dark);
+        background: #c01741;
+        border: 1px solid #8f0828;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         transition: transform 0.2s ease, background 0.2s ease;
       }
 
       .calendar-button:hover {
         transform: translateY(-2px);
-        background: var(--rose-dark);
+        background: #8f0828;
       }
 
       .calendar-link {
         font-size: 12px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: var(--ink);
+        color: #ffe6ed;
         text-decoration: none;
       }
 
       .mini-calendar {
         width: min(320px, 92vw);
         border-radius: 16px;
-        background: rgba(128, 0, 0, 0.45);
-        color: var(--ink);
+        background: rgba(255, 255, 255, 0.9);
+        color: #5a3d45;
         overflow: hidden;
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
         font-family: "Playfair Display", serif;
       }
 
       .section-card {
-        background: rgba(128, 0, 0, 0.38);
+        background: #ffffff;
         border-radius: 18px;
         padding: 24px 18px;
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        color: var(--ink);
+        border: 1px solid rgba(0, 0, 0, 0.06);
       }
 
       .mini-calendar .mc-top {
-        background: var(--rose);
+        background: #c01741;
         color: #fff;
         padding: 6px 10px;
         font-size: 12px;
@@ -502,7 +500,7 @@
 
       .mc-grid .dow {
         font-weight: 600;
-        color: var(--ink);
+        color: #9a6a73;
       }
 
       .mc-grid .day {
@@ -518,7 +516,7 @@
       }
 
       .mc-grid .highlight {
-        background: var(--rose);
+        background: #c01741;
         color: #fff;
         font-weight: 600;
         box-shadow: 0 6px 16px rgba(192, 23, 65, 0.35);
@@ -548,8 +546,8 @@
 
 
       .countdown-section {
-        background: transparent;
-        color: var(--ink);
+        background: #ffffff;
+        color: #3b2b2b;
         padding: 0 0 90px;
         min-height: 100vh;
       }
@@ -560,7 +558,7 @@
         justify-content: center;
         gap: 10px;
         margin: 16px 0;
-        color: var(--ink);
+        color: #c01741;
         font-size: 16px;
         letter-spacing: 2px;
       }
@@ -570,7 +568,7 @@
         content: "";
         height: 2px;
         flex: 1;
-        background: rgba(255, 255, 255, 0.75);
+        background: rgba(192, 23, 65, 0.75);
       }
 
    .countdown-top {
@@ -588,7 +586,7 @@
       .countdown-top h3 {
         font-family: "Great Vibes", cursive;
         font-size: 34px;
-        color: var(--ink);
+        color: #c01741;
         text-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
         font-weight: 700;
       }
@@ -596,7 +594,7 @@
       .section-title {
         font-family: "Great Vibes", cursive;
         font-size: 34px;
-        color: var(--ink);
+        color: #c01741;
         text-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
         font-weight: 700;
         text-align: center;
@@ -618,14 +616,14 @@
         display: block;
         font-size: 22px;
         letter-spacing: 2px;
-        color: var(--ink);
+        color: #3b2b2b;
       }
 
       .count-block small {
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: var(--ink);
+        color: #6f4a52;
       }
 
       .schedule {
@@ -639,7 +637,7 @@
         font-family: "Great Vibes", cursive;
         font-size: 32px;
         margin-bottom: 32px;
-        color: var(--ink);
+        color: #c01741;
         font-weight: 700;
         text-shadow:
           0.6px 0 0 currentColor,
@@ -677,7 +675,7 @@
         grid-template-columns: var(--date-col) var(--line-col) 1fr;
         gap: 12px;
         align-items: center;
-        color: var(--ink);
+        color: #3b2b2b;
       }
 
       .event .date {
@@ -686,7 +684,7 @@
         line-height: 1.4;
         text-align: right;
         letter-spacing: 0.5px;
-        color: var(--ink);
+        color: #3b2b2b;
       }
 
       .event .date span {
@@ -707,7 +705,7 @@
         font-size: 14px;
         letter-spacing: 1px;
         margin-top: 4px;
-        color: var(--ink);
+        color: #6f4a52;
         text-transform: uppercase;
       }
 
@@ -715,7 +713,7 @@
         font-size: 13px;
         letter-spacing: 0.6px;
         margin-top: 6px;
-        color: var(--ink);
+        color: #8b6a72;
       }
 
       .event .dot {
@@ -723,7 +721,7 @@
         align-self: center;
         width: var(--dot-size);
         height: var(--dot-size);
-        background: var(--rose);
+        background: #c01741;
         border-radius: 50%;
         box-shadow: 0 0 0 3px rgba(192, 23, 65, 0.2);
         z-index: 2;
@@ -754,7 +752,7 @@
         font-family: "Great Vibes", cursive;
         font-size: 30px;
         margin-bottom: 14px;
-        color: var(--ink);
+        color: #c01741;
         font-weight: 700;
         text-shadow:
           0.6px 0 0 currentColor,
@@ -766,7 +764,7 @@
       .venue p {
         font-size: 16px;
         letter-spacing: 0.5px;
-        color: var(--ink);
+        color: #3b2b2b;
       }
 
       .venue-photo {
@@ -781,7 +779,7 @@
         width: min(380px, 92vw);
         margin: 28px auto 0;
         text-align: center;
-        color: var(--ink);
+        color: #3b2b2b;
         background: transparent;
         border: none;
         border-radius: 20px;
@@ -793,11 +791,11 @@
         font-family: "Great Vibes", cursive;
         font-size: 34px;
         margin-bottom: 8px;
-        color: var(--ink);
+        color: #8f0828;
         font-weight: 700;
       }
 
-            .wishes p {\r\n        font-size: 15px;\r\n        letter-spacing: 0.4px;\r\n        margin-bottom: 18px;\r\n        color: var(--ink);\r\n      }
+            .wishes p {\r\n        font-size: 15px;\r\n        letter-spacing: 0.4px;\r\n        margin-bottom: 18px;\r\n        color: #c01741;\r\n      }
 
       .wishes form {
         display: grid;
@@ -812,8 +810,7 @@
         padding: 12px 14px;
         font-family: "Cormorant Garamond", serif;
         font-size: 16px;
-        background: #ffffff;
-        color: #2b1a1a;
+        background: #fff6f9;
       }
 
       .wishes textarea {
@@ -828,8 +825,8 @@
         font-size: 13px;
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        color: var(--ink);
-        background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+        color: #ffffff;
+        background: linear-gradient(135deg, #c01741, #8f0828);
         cursor: pointer;
       }
 
@@ -846,13 +843,13 @@
         border-radius: 12px;
         padding: 10px 12px;
         font-size: 14px;
-        color: var(--ink);
+        color: #3b2b2b;
       }
 
       .response-item strong {
         display: block;
         margin-bottom: 4px;
-        color: var(--ink);
+        color: #8f0828;
         font-weight: 600;
       }
 
@@ -866,7 +863,7 @@
         font-family: "Great Vibes", cursive;
         font-size: 34px;
         margin-bottom: 8px;
-        color: var(--ink);
+        color: #c01741;
         font-weight: 700;
       }
 
@@ -874,7 +871,7 @@
         font-size: 15px;
         letter-spacing: 0.4px;
         margin-bottom: 18px;
-        color: var(--ink);
+        color: #3b2b2b;
       }
 
       .rsvp form {
@@ -900,8 +897,8 @@
         font-size: 13px;
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        color: var(--ink);
-        background: var(--rose);
+        color: #ffffff;
+        background: #c01741;
         cursor: pointer;
       }
 
@@ -916,14 +913,14 @@
         font-family: "Great Vibes", cursive;
         font-size: 34px;
         margin-bottom: 8px;
-        color: var(--ink);
+        color: #c01741;
         font-weight: 700;
       }
 
       .welcome p {
         font-size: 15px;
         letter-spacing: 0.4px;
-        color: var(--ink);
+        color: #3b2b2b;
       }
       
       .dua-inside {
@@ -934,12 +931,12 @@
         font-family: "Playfair Display", serif;
         font-size: 20px;
         line-height: 1.7;
-        color: var(--ink);
+        color: #7b5560;
       }
 
       .dua-inside .dua-en {
         font-size: 14px;
-        color: var(--ink);
+        color: #5a3d45;
         margin-top: 6px;
       }.final-dua {
         width: min(420px, 92vw);
@@ -951,7 +948,7 @@
         font-family: "Great Vibes", cursive;
         font-size: 34px;
         margin-bottom: 10px;
-        color: var(--ink);
+        color: #c01741;
         font-weight: 700;
       }
 
@@ -959,12 +956,12 @@
         font-family: "Playfair Display", serif;
         font-size: 22px;
         line-height: 1.8;
-        color: var(--ink);
+        color: #7b5560;
       }
 
       .final-dua .dua-en {
         font-size: 14px;
-        color: var(--ink);
+        color: #5a3d45;
         margin-top: 6px;
       }.couple,
       .highlights,
@@ -980,7 +977,7 @@
         font-family: "Great Vibes", cursive;
         font-size: 34px;
         margin-bottom: 8px;
-        color: var(--ink);
+        color: #c01741;
         font-weight: 700;
       }
 
@@ -1089,7 +1086,7 @@
         font-size: 12px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: var(--ink);
+        color: #8f0828;
         text-decoration: none;
         background: rgba(192, 23, 65, 0.08);
         border: 1px solid rgba(192, 23, 65, 0.35);
@@ -1156,12 +1153,12 @@
         font-family: "Playfair Display", serif;
         font-size: 20px;
         line-height: 1.6;
-        color: var(--ink);
+        color: #7b5560;
       }
 
       .dua-en {
         font-size: 14px;
-        color: var(--ink);
+        color: #5a3d45;
         margin-top: 6px;
       }.countdown-top h3 {
           font-size: 36px;
@@ -1175,93 +1172,6 @@
         .highlights h4 {
           font-size: 36px;
         }
-      }
-      /* Palette refresh: maroon, ivory, gold */
-      :root {
-        --rose: #6e0b1a;
-        --rose-dark: #4a0711;
-        --rose-light: #f3e1d7;
-        --ivory: #fff7ef;
-        --ink: #3a0f0f;
-        --gold: #d9b15f;
-        --shadow: 0 18px 50px rgba(30, 8, 12, 0.25);
-      }
-
-      body {
-        background:
-          radial-gradient(circle at top, rgba(255, 247, 239, 0.16), transparent 45%),
-          linear-gradient(180deg, #6e0b1a 0%, #4a0711 55%, #3a0f0f 100%);
-        color: var(--ivory);
-      }
-
-      .card,
-      .section-card,
-      .mini-calendar,
-      .response-item,
-      .couple-card {
-        background: var(--ivory);
-        border-color: rgba(110, 11, 26, 0.2);
-        color: var(--ink);
-      }
-
-      .countdown-section,
-      .schedule,
-      .venue,
-      .wishes,
-      .rsvp,
-      .couple,
-      .highlights,
-      .welcome {
-        color: var(--ink);
-      }
-
-      .section-title,
-      .countdown-top h3,
-      .schedule h4,
-      .venue h4,
-      .wishes h4,
-      .gate-title {
-        color: var(--gold);
-      }
-
-      .flower-line {
-        color: var(--gold);
-      }
-
-      .flower-line::before,
-      .flower-line::after {
-        background: rgba(217, 177, 95, 0.7);
-      }
-
-      .button,
-      .lang-toggle button,
-      .theme-toggle button,
-      .calendar-button {
-        background: var(--rose);
-        color: var(--ivory);
-        border-color: var(--rose-dark);
-      }
-
-      .button.secondary,
-      .lang-toggle button.active {
-        background: transparent;
-        color: var(--rose);
-        border-color: var(--rose);
-      }
-
-      .wishes input,
-      .wishes textarea,
-      .rsvp input,
-      .rsvp select {
-        background: #ffffff;
-        color: var(--ink);
-        border: 1px solid rgba(110, 11, 26, 0.2);
-      }
-
-      .wishes input::placeholder,
-      .wishes textarea::placeholder,
-      .rsvp input::placeholder {
-        color: rgba(58, 15, 15, 0.6);
       }
     </style>
   </head>
@@ -1794,7 +1704,3 @@
     </script>
   </body>
 </html>
-
-
-
-
